@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Create New Superhuman</title>
+</head>
+<body>
+    <div class="form-container">
+    <h2>Add a superhuman</h2>
+    <form name="create-superhuman" action="/superhuman/create-super-human" method="POST">
+        <div class="radio-group">
+
+            <input type="radio" name="alignment" id="hero" value="1" checked/>
+            <label for="hero">Hero</label>
+
+            <input type="radio" name="alignment" id="villain" value="2"/>
+            <label for="villain">Villain</label>
+
+            <input type="radio" name="alignment" id="vigilante" value="3"/>
+            <label for="vigilante">Vigilante</label>
+
+        </div>
+        <div class="input-group">
+            <label for="human-name">Name:</label>
+            <input type="text" name="human-name" id="human-name" placeholder="Clark Kent"/>
+        </div>
+        <div class="input-group">
+            <label for="alias">Alias:</label>
+            <input type="text" name="alias" id="alias" placeholder="Superman"/>
+        </div>
+            <div class="input-group">
+            <label for="origin">Origin:</label>
+        <input type="text" name="origin" id="origin" placeholder="Krypton"/>
+        </div>
+        <div class="input-group">
+            <label for="abilities">Abilities:</label>
+            <input type="text" name="abilities" id="abilities" placeholder="Super-strength, Super-speed, flight"/>
+        </div>
+        <input type="Submit" value="Submit">
+    </form>
+    </div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="scripts/disable.js"></script>
+</body>
+</html>
