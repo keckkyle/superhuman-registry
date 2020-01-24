@@ -21,6 +21,16 @@ body {
     max-width: 950px;
 }
 
+.welcome-container {
+	padding-top: 0.75em;
+    margin: 3em auto;
+    box-shadow: 0 10px 20px black;
+    border-radius: 0.3rem;
+    text-align: center;
+    width: 40vw;
+}
+
+
 table {
 	box-sizing: border-box;
 	padding: 0 1em 0.5em;
